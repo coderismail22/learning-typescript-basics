@@ -8,6 +8,6 @@
     },
   };
 
-  const devTown = developer?.address?.town;  // It works better in JS . TS actually don't need ?. that much.
+  const devTown = developer?.address;  // It works better in JS . TS actually don't need ?. that much.
   console.log(devTown)
 }
