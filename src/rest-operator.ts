@@ -7,3 +7,7 @@ const sum = (...numbers: number[]): number => {
 const sayILoveYouToFriends = (...friends: string[]) => {
   friends.forEach((friend) => console.log("I love you", friend));
 };
+
+
+
+
