@@ -11,7 +11,7 @@
 
   //Invalid
   maybeString = null;
-  console.log(maybeString.toUpperCase)
+  // console.log(maybeString.toUpperCase)
 
   
 }
