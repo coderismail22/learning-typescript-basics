@@ -68,4 +68,6 @@
     number,
     { name: string; age: number }
   > = [1234, { name: "ismail", age: 19 }];
+
+
 }
