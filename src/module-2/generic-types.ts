@@ -34,15 +34,26 @@
   ];
 
   // it has strict structure which is very good
-  const developersArrayWithGenerics2: ArrayOfObjectWithGenerics<{
+  // we can use "interface" and "type" to shorten code
+  interface ArrayOfObjInterface {
     name: string;
     role: string;
-    age: number;
-  }> = [
+    age: 19;
+  }
+  type ArrayOfObjType = {
+    name: string;
+    role: string;
+    age: 19;
+    salary: 0;
+  };
+  const developersArrayWithGenerics2: ArrayOfObjectWithGenerics<
+    ArrayOfObjType & ArrayOfObjInterface
+  > = [
     {
       name: "ismail",
       role: "mern dev",
-      age: 18,
+      age: 19,
+      salary: 0,
     },
   ];
 
