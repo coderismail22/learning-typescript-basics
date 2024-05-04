@@ -10,13 +10,13 @@
     email: string;
   };
   //(1:Pick)
-  //Pick<T,K> ----> T(Original Type) and K(Modified Type)
+  //Pick<T,K> ----> T(Original Type) and K(Specified Type)
   //Pick<T,K> ----> creates a new type by picking specified properties
 
   type UserWithAddressUsingPick = Pick<User, "address">; // Example of "Pick<T,K>"
 
   //(2:Omit)
-  //Omit<T,K> ----> T(Original Type) and K(Modified Type)
+  //Omit<T,K> ----> T(Original Type) and K(Specified Type)
   //Omit<T,K> ----> creates a new type by removing specified properties
 
   type UserWithoutAddressUsingOmit = Omit<User, "address">; // Example of "Omit<T,K>"
@@ -63,5 +63,8 @@
   };
 
   // Where we don't know what will be the type of second property.
-  const emptyObj: Record<string, unknown> = {};
+  type typeUnknown = Record<string, unknown>;
+  const unknownObj: typeUnknown = {
+    role: "Junior Developer",
+  };
 }
