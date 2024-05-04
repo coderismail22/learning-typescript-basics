@@ -16,7 +16,7 @@
   const person4: Owner = "helicopter";
 
   //Function
-  const getValueOfKeys = <X, Y extends keyof X>(obj: X, key: Y) => {
+  const getValueOfKeys = <X, Y extends keyof X>(obj: X, key: Y): X[Y] => {
     return obj[key];
   };
 
@@ -30,6 +30,6 @@
     job: "mern stack developer",
   };
 
-  const valueOfAKey = getValueOfKeys(richDev, "salary"); // there's no "salary" key in the object.
+  const valueOfAKey = getValueOfKeys(richDev, "name"); // there's no "salary" key in the object.
   console.log(valueOfAKey);
 }
