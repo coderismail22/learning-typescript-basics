@@ -38,9 +38,11 @@
   }
 
   //Smart Way of Type Narrowing
-  const isDog = (animal: Animal): animal is Dog => {
+  //animal is Dog means given animal instance is of Dog class
+  const isDog = (animal: Animal): animal is Dog => { 
     return animal instanceof Dog;
   };
+  //animal is Cat means given animal instance is of Cat class
   const isCat = (animal: Animal): animal is Cat => {
     return animal instanceof Cat;
   };
