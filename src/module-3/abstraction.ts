@@ -8,7 +8,7 @@
     movingCar(): void;
   }
 
-  // implementation of "AbstractCar" class
+  // concrete implementation of "AbstractCar" class
   class RealCar implements AbstractCar {
     startEngine() {
       console.log("engine started");
@@ -36,7 +36,7 @@
     abstract bikeEngineStop(): void;
   }
 
-  //implementation of "AbstractBike" class
+  //concrete implementation of "AbstractBike" class
   class RealBike extends AbstractBike {
     bikeEngineStart(): void {
       console.log("Bike engine on");
