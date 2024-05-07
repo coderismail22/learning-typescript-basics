@@ -1,6 +1,5 @@
 {
-  //encapsulation
-
+  //encapsulation [Wrap Something Off]
   class Car {
     private _speed: number;
     constructor(_speed: number) {
